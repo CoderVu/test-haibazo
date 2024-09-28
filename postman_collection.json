@@ -1,0 +1,1158 @@
+{
+	"info": {
+		"_postman_id": "1da0ebdf-0982-4c73-afe6-e7f9fffbdbd7",
+		"name": "testHaibazo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29485814"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Outdoor\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/category/add",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCategoryToProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"3\",\r\n    \"categoryId\":\"4\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/category/add/product",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"add",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Clothing\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/category/get/all",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"get",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCategoryByProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Clothing\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/category/get/4",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"get",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Size",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"size\": \"2XL\"\r\n\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/size/add",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"size",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addSizeToProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"1\",\r\n    \"sizeId\":\"4\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/size/add/product",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"size",
+								"add",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSizeByProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/size/get/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"size",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Style",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bohemian\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/style/add",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"style",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addStyleToProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"1\",\r\n    \"styleId\":\"4\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/style/add/product",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"style",
+								"add",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStyleByProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"1\",\r\n    \"styleId\":\"1\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/style/get/2",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"style",
+								"get",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Image",
+			"item": [
+				{
+					"name": "addImageToProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/OneDrive/Desktop/Quan-Au-Aristino-ATRR14-3-x500x500x4.jpg"
+								},
+								{
+									"key": "productId",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/image/add",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"image",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getImageByProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/D:/Picture/Saved Pictures/Camera Roll/1526_Blue-Deluxe-Room-Overview.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/image/get/1",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"image",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Color",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hông\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/color/add",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"color",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addColorToProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"4\",\r\n    \"colorId\":\"2\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/color/add/product",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"color",
+								"add",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getColorByProudct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"1\",\r\n    \"colorId\":\"1\"\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/color/get/2",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"color",
+								"get",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rate",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rate\": \"4\",\r\n    \"comment\": \"Đẹp\",\r\n    \"productId\" : \"5\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/rate/add",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"rate",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRateByProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rate\": \"4\",\r\n    \"comment\": \"Đẹp\",\r\n    \"productId\" : 1\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/rate/get/7",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"rate",
+								"get",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Product Name\",\r\n    \"description\": \"Comfortable cotton T-shirt with a regular fit, available in multiple colors.\",\r\n    \"productPrice\": 25.00,\r\n    \"price\": 20.00,\r\n    \"discountPrice\": 5.00,\r\n    \"expiredPromotion\": \"2024-12-31T23:59:59\",\r\n    \"categoryId\": 3\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/product/add",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addview",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/product/increase/views/4",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"increase",
+								"views",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/product/all",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/product/1",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filterByCategory",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/product/filter/category/2",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"filter",
+								"category",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filterByColor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/product/filter/color/1",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"filter",
+								"color",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filterBySize",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/product/filter/size/3",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"filter",
+								"size",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filterByPriceASC",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/product/filter/price/asc?minPrice=1&maxPrice=25",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"filter",
+								"price",
+								"asc"
+							],
+							"query": [
+								{
+									"key": "minPrice",
+									"value": "1"
+								},
+								{
+									"key": "maxPrice",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filterByPriceDESC",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/product/filter/price/desc?minPrice=1&maxPrice=24",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"filter",
+								"price",
+								"desc"
+							],
+							"query": [
+								{
+									"key": "minPrice",
+									"value": "1"
+								},
+								{
+									"key": "maxPrice",
+									"value": "24"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filterByStyle",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/product/filter/style/2",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"filter",
+								"style",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filterByMuti",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.128.76.234:8080/api/v1/product/filter?colorId=2&sizeId=1&styleId=2&minPrice=1&maxPrice=45&categoryId=3",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"76",
+								"234"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "colorId",
+									"value": "2"
+								},
+								{
+									"key": "sizeId",
+									"value": "1"
+								},
+								{
+									"key": "styleId",
+									"value": "2"
+								},
+								{
+									"key": "minPrice",
+									"value": "1"
+								},
+								{
+									"key": "maxPrice",
+									"value": "45"
+								},
+								{
+									"key": "categoryId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
